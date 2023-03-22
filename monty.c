@@ -1,5 +1,5 @@
 #include "monty.h"
-int nodeval;
+
 /**
 * main - grabs arguments and sends them to be parsed
 * @argc: count of arguments
