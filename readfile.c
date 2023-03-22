@@ -134,14 +134,14 @@ void f_opcode(char **command, char *buffer, int line, stack_t **list, FILE *m)
 {
 	int j = 0;
 	instruction_t opcodeFunc[] = {
-		{"push", op_push},
-		{"pall", op_pall},
-		{"pint", op_pint},
-		{"pop", op_pop},
-		{"swap", op_swap},
-		{"add", op_add},
-		{"nop", op_nop},
-		{"sub", op_sub},
+		{"push", push},
+		{"pall", pall},
+		{"pint", pint},
+		{"pop", pop},
+		{"swap", swap},
+		{"add", add},
+		{"nop", nop},
+		{"sub", sub},
 		{NULL, NULL},
 	};
 
