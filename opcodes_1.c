@@ -33,3 +33,28 @@ void push(stack_t **stack, unsigned int line_number)
 	(*stack)->prev = temp;
 	*stack = temp;
 }
+
+/**
+* pall - prints the stack
+* @stack: stack
+* @line_number: line number from read file
+* Return: nothing, but exits != 0 if fail
+*/
+void pall(stack_t **stack, unsigned int line_number)
+{
+	stack_t *current;
+
+	line_number = line_number;
+
+	if (stack == NULL) /* prints nothing if stack is empty */
+	{
+		printf("\n");
+		return;
+	}
+	current = *stack;
+	while (current != NULL)
+	{
+		printf("%d\n", current->n);
+		current = current->next;
+	}
+}
